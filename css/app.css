@@ -27,12 +27,12 @@ html {
 
 body {
     overflow: overlay;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     padding: 0px !important;
 }
 
-.font-estetik {
-    font-family: 'Sacramento', cursive !important;
+.font-handwriting {
+    font-family: 'Dancing Script', cursive !important;
 }
 
 .cropper {

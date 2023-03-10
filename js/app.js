@@ -3,7 +3,7 @@ const audio = (() => {
 
     let getInstance = function () {
         if (!instance) {
-            let url = document.getElementById('tombol-musik').getAttribute('data-url').toString();
+            let url = document.getElementById('btn-music').getAttribute('data-url').toString();
             instance = new Audio(url);
         }
 
@@ -20,20 +20,8 @@ const audio = (() => {
     };
 })();
 
-const salin = (btn) => {
-    navigator.clipboard.writeText(btn.getAttribute('data-nomer').toString());
-    let tmp = btn.innerHTML;
-    btn.innerHTML = 'Tersalin';
-    btn.disabled = true;
-
-    setTimeout(() => {
-        btn.innerHTML = tmp;
-        btn.disabled = false;
-    }, 1500);
-};
-
 const timer = () => {
-    let tanggal = document.getElementById('tampilan-waktu').getAttribute('data-waktu').toString();
+    let tanggal = document.getElementById('timestamp').getAttribute('data-waktu').toString();
     let countDownDate = new Date(tanggal).getTime();
     let time = null;
 
@@ -54,7 +42,7 @@ const timer = () => {
 
 const buka = async () => {
     document.getElementById('loading').style.display = 'none';
-    document.getElementById('tombol-musik').style.display = 'block';
+    document.getElementById('btn-music').style.display = 'block';
     AOS.init();
     timer();
     audio.play();
