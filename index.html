@@ -180,14 +180,22 @@
                     </div>
 
                     <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="https://goo.gl/maps/ALZR6FJZU3kxVwN86" target="_blank"
+                        <a href="https://goo.gl/maps/M2c73YZTjZhzJd5g7" target="_blank"
                             class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
                             <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps
                         </a>
                         <p class="mb-0 mt-1 mx-1" style="font-size: 0.9rem;">
-                            RT 10 RW 02, Desa Pajerukan, Kec. Kalibagor, Kab. Banyumas, Jawa Tengah 53191
+                            Koripan, Sindumartani, Ngemplak, Sleman
                         </p>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d471.4903796708964!2d110.47871528475498!3d-7.695596539459396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1678441568554!5m2!1sen!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     </div>
+
+
                 </div>
             </div>
         </section>
@@ -198,94 +206,13 @@
             </path>
         </svg>
 
-        <div class="container">
-            <div class="py-4">
-                <div class="text-center">
-                    <h1 class="font-estetik mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
-                    <p class="mb-1" style="font-size: 0.9rem;">
-                        Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami,
-                        dapat melalui :
-                    </p>
-
-                    <div class="overflow-x-hidden">
-                        <div class="row justify-content-center">
-                            <div class="col-12 card-body border rounded-3 shadow p-3 m-3" style="max-width: 25rem;"
-                                data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/1200px-BNI_logo.svg.png"
-                                    class="img-fluid rounded rounded-3" width="150" alt="bni">
-                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">
-                                    No. Rekening 123456789
-                                </p>
-                                <p class="card-text" style="font-size: 0.9rem;">
-                                    a.n Lorem ipsum dolor
-                                </p>
-                                <button class="btn btn-light btn-sm" data-nomer="123456789" onclick="salin(this)">Salin
-                                    No. Rekening</button>
-                            </div>
-
-                            <div class="col-12 card-body border rounded-3 shadow p-3 m-3" style="max-width: 25rem;"
-                                data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png"
-                                    class="img-fluid rounded rounded-3" width="150" alt="bri">
-                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">
-                                    No. Rekening 123456789
-                                </p>
-                                <p class="card-text" style="font-size: 0.9rem;">
-                                    a.n Lorem ipsum dolor
-                                </p>
-                                <button class="btn btn-light btn-sm" data-nomer="123456789" onclick="salin(this)">Salin
-                                    No. Rekening</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <section class="m-0 p-0" id="ucapan">
-            <div class="container">
-                <div class="border rounded-3 p-3">
-                    <h1 class="font-estetik text-center mb-3" style="font-size: 3rem;">Ucapan & Doa</h1>
-                    <input type="hidden" id="idbalasan">
-                    <div class="mb-1" id="balasan"></div>
-                    <div class="mb-3">
-                        <label for="formnama" class="form-label">Nama</label>
-                        <input type="text" class="form-control shadow-sm" id="formnama" placeholder="Isikan Nama Anda">
-                    </div>
-                    <div class="mb-3">
-                        <label for="hadiran" class="form-label" id="labelhadir">Kehadiran</label>
-                        <select class="form-select shadow-sm" aria-label="Default select example" id="hadiran">
-                            <option value="0" selected>Konfirmasi Kehadiran</option>
-                            <option value="1">Hadir</option>
-                            <option value="2">Berhalangan</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formpesan" class="form-label">Ucapan & Doa</label>
-                        <textarea class="form-control shadow-sm" id="formpesan" rows="4"
-                            placeholder="Tulis Ucapan & Doa"></textarea>
-                    </div>
-                    <div class="d-flex">
-                        <button class="flex-fill btn btn-danger btn-sm rounded shadow m-1" style="display: none;"
-                            onclick="resetForm()" id="batal">
-                            Batal<i class="fa-solid fa-xmark ms-1"></i>
-                        </button>
-                        <button class="flex-fill btn btn-primary btn-sm rounded shadow m-1" style="display: none;"
-                            onclick="kirimBalasan()" id="kirimbalasan">
-                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
-                        </button>
-                    </div>
-                    <div class="d-grid mb-2">
-                        <button class="btn btn-primary btn-sm rounded shadow" onclick="kirim()" id="kirim">
-                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="overflow-y-scroll ucapan rounded-3 mt-4" style="height: 25rem;">
-                    <div id="daftarucapan" style="overflow-wrap: break-word !important;"></div>
-                </div>
-            </div>
+            <div class="commentbox"></div>
+
+            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+            <script>commentBox('5648883367542784-proj')</script>
         </section>
+
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#111111" fill-opacity="1"
