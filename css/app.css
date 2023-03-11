@@ -31,8 +31,16 @@ body {
     padding: 0px !important;
 }
 
+.font-display {
+    font-family: 'Patua One', cursive !important;
+}
+
 .font-handwriting {
     font-family: 'Dancing Script', cursive !important;
+}
+
+.font-handwriting-name {
+    font-family: 'Great Vibes', cursive !important;
 }
 
 .cropper {
